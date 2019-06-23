@@ -8,11 +8,10 @@ katz_deli = []
     string = "The line is currently: "
       katz_deli.each_with_index do |name, index|
         number = index + 1
-        new_string  = "#{number}. #{name}, "
+        new_string  = "#{number}. #{name} "
         string << new_string 
         puts string
       end
-    
   else 
   puts "The line is currently empty."
   end
