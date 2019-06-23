@@ -11,7 +11,7 @@ katz_deli = []
         new_string  = "#{number}. #{name}, "
         string << new_string 
       end
-     puts string.slice(0..-4) 
+     puts string.slice(0..-3) 
     
   else 
   puts "The line is currently empty."
