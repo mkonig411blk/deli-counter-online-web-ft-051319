@@ -10,8 +10,8 @@ katz_deli = []
         number = index + 1
         new_string  = "#{number}. #{name}, "
         string << new_string 
+        puts string
       end
-     puts string.slice(0..-3) 
     
   else 
   puts "The line is currently empty."
