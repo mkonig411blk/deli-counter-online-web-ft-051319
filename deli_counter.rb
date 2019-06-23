@@ -1,1 +1,33 @@
 # Write your code here.
+
+katz_deli = []
+ number = 0
+ 
+ def line(katz_deli) 
+if (katz_deli.length > 0) 
+  katz_deli.each_with_index do |name, index|
+    string = "The Line is currently: "
+  number = index + 1
+  string >> "#{number}. #{name},"
+end
+else 
+  puts "The line is currently empty."
+  end
+end
+
+def take_a_number(katz_deli, name) 
+  number = katz_deli.length
+  puts "Welcome, #{name}. You are number #{number} in line."
+end
+
+def nowServing (katzDeliLine) 
+  if (katzDeliLine.length > 0) 
+    firstName = katzDeliLine[0]
+    katzDeliLine.shift()
+    return "Currently serving " + firstName + "."
+  else 
+    return "There is nobody waiting to be served!"
+  end
+end
+
+
