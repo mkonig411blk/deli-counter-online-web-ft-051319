@@ -12,8 +12,7 @@ katz_deli = []
         string << new_string 
         puts string
       end
-     puts string.slice(0..-3) 
-    
+     puts string.slice(0..-1) 
   else 
   puts "The line is currently empty."
   end
