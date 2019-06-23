@@ -11,7 +11,7 @@ if (katz_deli.length > 0)
         new_string  = "#{number}. #{name}, "
         string << new_string 
       end
-      string <<
+      string << 
 end
 else 
   puts "The line is currently empty."
