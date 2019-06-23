@@ -5,9 +5,11 @@ katz_deli = []
  
  def line(katz_deli) 
 if (katz_deli.length > 0) 
+  string = "The line is currently: "
   katz_deli.each_with_index do |name, index|
-    string = "The Line is currently: "
   number = index + 1
+  new_string  = "#{number}. {#name} "
+  
   string >> "#{number}. #{name},"
 end
 else 
