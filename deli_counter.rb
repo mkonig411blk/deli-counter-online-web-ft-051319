@@ -27,9 +27,9 @@ def now_serving (katz_deli)
   if (katz_deli.length > 0) 
     firstName = katzDeliLine[0]
     katzDeliLine.shift()
-    return "Currently serving " + firstName + "."
+    puts "Currently serving " + firstName + "."
   else 
-    return "There is nobody waiting to be served!"
+    puts "There is nobody waiting to be served!"
   end
 end
 
