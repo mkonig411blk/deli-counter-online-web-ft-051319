@@ -6,11 +6,12 @@ katz_deli = []
  def line(katz_deli) 
 if (katz_deli.length > 0) 
   string = "The line is currently: "
-  katz_deli.each_with_index do |name, index|
-  number = index + 1
-  new_string  = "#{number}. {#name} "
-  
-  string >> "#{number}. #{name},"
+      katz_deli.each_with_index do |name, index|
+        number = index + 1
+        new_string  = "#{number}. #{name}, "
+        string << new_string 
+      end
+      string <<
 end
 else 
   puts "The line is currently empty."
